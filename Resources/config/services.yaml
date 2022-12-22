@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    # no autowire as its inside a bundle
+    autowire: false
+    autoconfigure: false
+
+  FloatingBits\ExampleEaProblemsBundle\Problem\ProblemProvider:
+    tags: [ 'evolutionary_algorithm.problem_provider' ]

@@ -1,0 +1,35 @@
+{
+    "name": "floatingbits/example-ea-problems-bundle",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": {
+            "FloatingBits\\ExampleEaProblemsBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Soeren Parton",
+            "email": "mail@floatingbitsmedia.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "floatingbits/evolutionary-algorithm": "dev-main",
+        "floatingbits/evolutionary-algorithm-bundle": "dev-main",
+        "floatingbits/random-string-ea-problem": "dev-main"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/home/soeren/Projects/ea-bundle-container/evolutionary-algorithm-bundle"
+        },
+        {
+            "type": "path",
+            "url": "/home/soeren/Projects/evolutionary-algorithm"
+        },
+        {
+            "type": "path",
+            "url": "/home/soeren/Projects/random-string-ea-problem"
+        }
+    ]
+}
