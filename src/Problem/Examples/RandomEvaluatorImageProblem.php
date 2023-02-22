@@ -5,10 +5,9 @@ namespace FloatingBits\ExampleEaProblemsBundle\Problem\Examples;
 
 use Floatingbits\EvolutionaryAlgorithmBundle\Problem\PersistableProblemInterface;
 use FloatingBits\ExampleEaProblemsBundle\Form\RandomImageDummyType;
-use FloatingBits\RandomStringEaProblem\Problem\AbstractProblem;
-use FloatingBits\RandomStringEaProblem\Problem\RandomStringProblem;
+use Floatingbits\ImageProcessingEaProblems\Problem\RandomEvaluator\Problem;
 
-class RandomStringEaProblem extends AbstractProblem implements PersistableProblemInterface
+class RandomEvaluatorImageProblem extends Problem implements PersistableProblemInterface
 {
     /**
      * @var string
@@ -30,7 +29,6 @@ class RandomStringEaProblem extends AbstractProblem implements PersistableProble
     {
         $this->targetString = $targetString;
     }
-
 
     /**
      * @return string

@@ -6,3 +6,13 @@ services:
 
   FloatingBits\ExampleEaProblemsBundle\Problem\ProblemProvider:
     tags: [ 'evolutionary_algorithm.problem_provider' ]
+
+  ea.theme.image:
+    class: Floatingbits\EvolutionaryAlgorithmBundle\Theming\Theme
+    arguments: [ '@@ExampleEaProblems/_includes/ea_themes/image', 1, '@ea.theme.default' ]
+    tags: [ 'evolutionary_algorithm.theme' ]
+
+  ea.twig.base64:
+    class: 'FloatingBits\ExampleEaProblemsBundle\Twig\Base64FilterExtension'
+    tags:
+      - { name: twig.extension }

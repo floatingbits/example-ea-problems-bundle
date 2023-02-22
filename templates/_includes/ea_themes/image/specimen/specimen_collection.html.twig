@@ -1,0 +1,11 @@
+{% trans_default_domain 'EvolutionaryAlgorithmBundle' %}
+<ul>
+    {% for specimen in specimenCollection %}
+            {% set genotypeTemplate = templateProvider.getTemplateForObject(specimen.genotype) %}
+            {% set phenotypeTemplate = templateProvider.getTemplateForObject(specimen.phenotype) %}
+        <li>Rating: {{ specimen.evaluation.mainFitness }}
+            Genotype: {{ genotypeTemplate|length ? include(genotypeTemplate, {genotype: specimen.genotype, templateProvider: templateProvider }) : ('templating.error.template_not_found'|trans) }}
+            Phenotype: {{ phenotypeTemplate|length ? include(phenotypeTemplate, {phenotype: specimen.phenotype, templateProvider: templateProvider }) : ('templating.error.template_not_found'|trans) }}
+        </li>
+    {% endfor %}
+</ul>

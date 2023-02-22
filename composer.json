@@ -16,21 +16,11 @@
     "require": {
         "floatingbits/evolutionary-algorithm": "dev-main",
         "floatingbits/evolutionary-algorithm-bundle": "dev-main",
-        "floatingbits/random-string-ea-problem": "dev-main"
+        "floatingbits/random-string-ea-problem": "dev-main",
+        "floatingbits/image-processing-ea-problems": "dev-main"
     },
     "repositories": [
-        {
-            "type": "path",
-            "url": "/home/soeren/Projects/ea-bundle-container/evolutionary-algorithm-bundle"
-        },
-        {
-            "type": "path",
-            "url": "/home/soeren/Projects/evolutionary-algorithm"
-        },
-        {
-            "type": "path",
-            "url": "/home/soeren/Projects/random-string-ea-problem"
-        },
+      
         {
             "type": "vcs",
             "url": "https://github.com/floatingbits/evolutionary-algorithm",
@@ -44,6 +34,11 @@
         {
             "type": "vcs",
             "url": "https://github.com/floatingbits/random-string-ea-problem",
+            "no-api": true
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/floatingbits/image-processing-ea-problems",
             "no-api": true
         }
     ]
